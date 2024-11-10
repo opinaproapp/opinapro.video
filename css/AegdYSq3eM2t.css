@@ -1,0 +1,243 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #161616; /* Cor de fundo escura */
+    color: whitesmoke; /* Texto claro para contraste */
+}
+
+/* Container de vídeo */
+.video-container {
+    width: 100%; /* Largura total da página */
+    background: #161616; /* Fundo escuro para combinar com a página */
+}
+
+/* Informações do vídeo */
+.video-info {
+    padding: 10px; /* Espaçamento interno */
+}
+
+img.user-verify {
+    width: 18px;
+}
+
+.video-title {
+    font-size: 16px; /* Tamanho do título do vídeo */
+    font-weight: bold; /* Negrito para destacar */
+    margin-bottom: 5px; /* Espaçamento inferior */
+}
+
+.views {
+    font-size: 12px; /* Tamanho da fonte para a visualização */
+    color: #606060; /* Cor cinza para visualizações */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Ações do vídeo (like, share, etc.) */
+.video-actions {
+    font-size: 14px; /* Tamanho da fonte */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaço entre os itens */
+    padding-bottom: 10px; /* Espaçamento inferior */
+    border-bottom: 1px solid #353535; /* Linha inferior */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Informações do canal */
+.channel-info {
+    display: flex; /* Exibe os itens em linha */
+    align-items: center; /* Alinhamento vertical */
+}
+
+.channel-icon {
+    width: 40px;
+    height: 40px; /* Tamanho do ícone do canal */
+    border-radius: 50%; /* Bordas arredondadas */
+    margin-right: 10px; /* Espaço à direita do ícone */
+}
+
+/* Botão de inscrição */
+.subscribe {
+    margin-left: 12px; /* Margem à esquerda */
+    background: #303030; /* Fundo cinza escuro */
+    color: white; /* Texto branco */
+    padding: 4px 8px; /* Espaçamento interno */
+    font-size: 12px; /* Tamanho da fonte */
+    border: 1px solid #414141; /* Borda cinza */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Seção de comentários */
+.comments {
+    font-size: 12px; /* Tamanho da fonte */
+    padding: 16px; /* Espaçamento interno */
+    background: #303030; /* Fundo cinza escuro */
+    margin: 10px 10px; /* Margens internas */
+    border-radius: 12px; /* Bordas arredondadas */
+}
+
+/* Painel de comentários (que aparece ao clicar) */
+.comments-panel {
+    position: fixed; /* Fixa na tela */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #161616; /* Fundo escuro */
+    color: white; /* Texto branco */
+    display: none; /* Inicialmente escondido */
+    z-index: 10; /* Garantir que fique acima de outros elementos */
+    overflow-y: auto; /* Habilita rolagem vertical */
+    top: 25%; /* Alinhamento vertical */
+    padding: 16px; /* Espaçamento interno */
+}
+
+/* Cabeçalho dos comentários */
+.comments-header {
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaçamento entre itens */
+    align-items: center; /* Alinhamento vertical */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: 700; /* Negrito */
+    margin-bottom: 30px; /* Espaçamento inferior */
+    padding-bottom: 14px; /* Espaçamento interno inferior */
+    border-bottom: 1px solid grey; /* Linha inferior */
+}
+
+.close-comments {
+    cursor: pointer; /* Indica que é clicável */
+    color: white; /* Cor branca */
+    font-size: 23px; /* Tamanho da fonte maior */
+}
+
+/* Imagem do usuário nos comentários */
+.user-img {
+    width: 40px;
+    height: 40px; /* Tamanho da imagem */
+    border-radius: 50%; /* Bordas arredondadas */
+    margin-right: 10px; /* Espaço à direita da imagem */
+    float: left; /* Faz a imagem flutuar à esquerda */
+}
+
+/* Ícone centralizado */
+.center-icon {
+    display: block; /* Bloqueia o ícone */
+    margin: 0 auto; /* Centraliza o ícone horizontalmente */
+    font-size: 20px; /* Tamanho ajustável do ícone */
+}
+
+/* Estilos dos comentários individuais */
+.comment {
+    clear: both; /* Limpa flutuações anteriores */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 5px; /* Margem superior */
+    background: #171717; /* Fundo escuro */
+    border-bottom: 1px solid #333333 !important; /* Linha inferior */
+}
+
+/* Ícones de like e dislike */
+.comment div {
+    display: inline-block; /* Exibe em linha */
+}
+
+.like-icon, .deslike-icon {
+    cursor: pointer; /* Indica que é clicável */
+    color: #cccccc78; /* Cor cinza clara */
+    margin-top: 5px; /* Margem superior */
+}
+
+.like-icon {
+    margin-right: 6px; /* Margem à direita do like */
+}
+
+.like-icon:hover {
+    color: #fff; /* Cor ao passar o mouse */
+}
+
+/* Texto nos comentários */
+.comment p {
+    margin: 4px 0; /* Margem interna */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Links nos comentários */
+.comment a {
+    color: #1DA1F2; /* Cor azul semelhante ao Twitter */
+}
+
+/* Alternar exibição dos comentários */
+.comments-toggle {
+    font-size: 12px; /* Tamanho da fonte */
+    padding: 14px; /* Espaçamento interno */
+    background: #1c1c1c; /* Fundo mais escuro */
+    margin: 10px 10px; /* Margem */
+    border-radius: 12px; /* Bordas arredondadas */
+}
+
+/* Nome do canal nos comentários */
+p.channel-name {
+    margin: 0; /* Remove margem */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 500; /* Seminegrito */
+    color: white; /* Cor branca */
+}
+
+p.subscribers {
+    font-size: 12px; /* Tamanho da fonte */
+    margin: 0; /* Remove margem */
+    color: grey; /* Cor cinza */
+}
+
+/* Botões de ação e mostrar mais */
+.action-button, .show-more {
+    background: #303030; /* Fundo cinza escuro */
+    color: white; /* Texto branco */
+    padding: 4px 8px; /* Espaçamento interno */
+    font-size: 12px; /* Tamanho da fonte */
+    border: 1px solid #161616; /* Borda escura */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Botão de deletar com cor de destaque */
+.btn-danger {
+    color: #fff; /* Texto branco */
+    background-color: #dc3545; /* Cor de fundo vermelho */
+    font-size: 12px; /* Tamanho da fonte */
+    padding: 4px; /* Espaçamento interno */
+    border-color: #dc3545; /* Borda na mesma cor */
+}
+
+/* Estilos dos comentários adicionais */
+.user_channel {
+    color: whitesmoke; /* Cor do texto clara */
+    font-size: 12px; /* Tamanho da fonte */
+}
+
+.comment_channel {
+    color: grey; /* Cor cinza para o nome do canal */
+    font-size: 15px; /* Tamanho da fonte */
+    font-weight: 500; /* Seminegrito */
+}
+
+.content-comments {
+    color: whitesmoke; /* Cor do texto clara */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Ajuste específico para comentários de usuários */
+.content-comments.users {
+    margin-left: 52px; /* Margem à esquerda */
+    margin-top: -24px; /* Margem superior negativa */
+}
+
+.comment_users {
+    font-size: 12px; /* Tamanho da fonte */
+    font-weight: 500; /* Seminegrito */
+    color: whitesmoke; /* Cor do texto clara */
+}
+
+/* Cabeçalho visível nos comentários */
+.comments-header.visible {
+    margin: 16px; /* Margem */
+    font-size: 12px; /* Tamanho da fonte */
+}
